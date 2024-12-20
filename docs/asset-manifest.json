@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/adamssite/static/css/main.6825d112.css",
+    "main.js": "/adamssite/static/js/main.bbf46453.js",
+    "index.html": "/adamssite/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.6825d112.css",
+    "static/js/main.bbf46453.js"
+  ]
+}
