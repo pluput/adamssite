@@ -5,8 +5,8 @@ const path = require("path");
 
 // Define an array with your portfolio item IDs and corresponding URLs
 const portfolioItems = [
-  { id: "article1", url: "http://localhost:3000/portfolio/article1" },
-  { id: "article2", url: "http://localhost:3000/portfolio/article2" },
+  { id: "article1", url: "${process.env.PUBLIC_URL}/portfolio/article1" },
+  { id: "article2", url: "${process.env.PUBLIC_URL}/portfolio/article2" },
   // Add more items as needed
 ];
 
