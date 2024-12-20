@@ -75,7 +75,7 @@ const services = [{
 const dataportfolio = [
     {
       id: "article1",
-      img: "/previews/article1.png",
+      img: "${process.env.PUBLIC_URL}/previews/article1.png",
       description: "An exploration of how music theory shapes the sounds we hear every day.",
       detailedContent: `
         <br>
@@ -92,7 +92,7 @@ const dataportfolio = [
     },
     {
       id: "article2",
-      img: "/previews/article2.png",
+      img: "${process.env.PUBLIC_URL}/previews/article2.png",
       description: "Discover how artificial intelligence is changing the way we create and experience music.",
       detailedContent: `
         <br>
