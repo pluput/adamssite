@@ -2,9 +2,9 @@
 
 A simple writer's portfolio built with React. 
 
-### [live preview](https://pluput.github.io/react-portfolio/)
+### [live preview](https://pluput.github.io/adamssite/)
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://pluput.github.io/react-portfolio/)
+[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://pluput.github.io/adamssite/)
 
 ### Features
 
