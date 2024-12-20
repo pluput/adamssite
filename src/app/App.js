@@ -1,13 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   useLocation,
 } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";
+import AppRoutes from "./routes";  // Ensure this import is correct
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -20,21 +19,13 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const [isCursorVisible, setIsCursorVisible] = useState(true); // You can remove this if you're not using the cursor
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div>
       <ScrollToTop>
         <Headermain />
-        <AppRoutes />
+        <AppRoutes />  {/* This is where your routes are rendered */}
       </ScrollToTop>
     </Router>
   );
