@@ -92,7 +92,7 @@ const dataportfolio = [
     },
     {
       id: "article2",
-      img: "${process.env.PUBLIC_URL}/previews/article2.png",
+      img: "adamssite/previews/article2.png",
       description: "Discover how artificial intelligence is changing the way we create and experience music.",
       detailedContent: `
         <br>
@@ -106,7 +106,7 @@ const dataportfolio = [
         <p>As AI continues to evolve, its potential to assist musicians in composing, mixing, and mastering tracks is becoming more apparent. While it’s unlikely to replace human creativity, AI serves as a powerful tool that expands the boundaries of what’s possible in music.</p>
       `,
       title: "How AI is Reshaping the World of Music",
-      link: "/portfolio/article2",
+      link: "adamssite/portfolio/article2",
     },
     // {
     //     img: "https://picsum.photos/400/600/?grayscale",
