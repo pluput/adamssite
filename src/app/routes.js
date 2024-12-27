@@ -8,16 +8,18 @@ import { About } from "../pages/about";
 
 function AppRoutes() {
   return (
-    <div className="s_c">
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/:id" element={<PortfolioItemPage />} /> {/* Dynamic route for portfolio item */}
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </div>
+    <Router basename="/adamssite">
+      <div className="s_c">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioItemPage />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
