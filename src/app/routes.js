@@ -10,21 +10,18 @@ import { Article2 } from "../pages/articles/article2";
 
 function AppRoutes() {
   return (
-    <Router basename="/adamssite">
-      <div className="s_c">
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/article1" element={<Article1 />} />
-          <Route path="/portfolio/article2" element={<Article2 />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="s_c">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/article1" element={<Article1 />} />
+        <Route path="/portfolio/article2" element={<Article2 />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </div>
   );
 }
-
 
 export default AppRoutes;

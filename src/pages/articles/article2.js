@@ -6,12 +6,18 @@ import {
 
 
 export const Article2 = () => {
+    const article = dataportfolio.find((article) => article.id === "article2");
+
+    if (!article) {
+        return <div>Article not found.</div>;
+    }
+
     return (
         <div className="portfolio-item-page">
-        <br />
-        <h1>{dataportfolio.find(article => article.id === "article2").title}</h1>
-        <p>{dataportfolio.find(article => article.id === "article2").description}</p>
-        {/* <div dangerouslySetInnerHTML={{ __html: item.detailedContent }} /> */}
+            <br />
+            <h1>{article.title}</h1>
+            <p>{article.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: article.detailedContent }} />
         </div>
     );
 };
