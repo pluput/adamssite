@@ -5,8 +5,8 @@ import { Portfolio } from "../pages/portfolio";
 import { PortfolioItemPage } from "../pages/portfolioItemPage"; // Import the new PortfolioItemPage
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
-import Article1 from "../pages/article1";
-import Article2 from "../pages/article2";
+import { Article1 } from "../pages/articles/article1";
+import { Article2 } from "../pages/articles/article2";
 
 function AppRoutes() {
   return (
