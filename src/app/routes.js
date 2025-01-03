@@ -15,8 +15,8 @@ function AppRoutes() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/article1" element={<Article1 />} />
-        <Route path="/portfolio/article2" element={<Article2 />} />
+        <Route path="/article1" element={<Article1 />} />
+        <Route path="/article2" element={<Article2 />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Home />} />
       </Routes>

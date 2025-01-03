@@ -88,7 +88,7 @@ const dataportfolio = [
         <p>Understanding even the basics can unlock a deeper appreciation for the music we consume daily and provide a creative edge for aspiring musicians.</p>
       `,
       title: "The Role of Music Theory in Modern Soundscapes",
-      link: "/adamssite/portfolio/article1",
+      link: "/adamssite/article1",
     },
     {
       id: "article2",
@@ -106,7 +106,7 @@ const dataportfolio = [
         <p>As AI continues to evolve, its potential to assist musicians in composing, mixing, and mastering tracks is becoming more apparent. While it’s unlikely to replace human creativity, AI serves as a powerful tool that expands the boundaries of what’s possible in music.</p>
       `,
       title: "How AI is Reshaping the World of Music",
-      link: "/adamssite/portfolio/article2",
+      link: "/adamssite/article2",
     },
     // {
     //     img: "https://picsum.photos/400/600/?grayscale",
