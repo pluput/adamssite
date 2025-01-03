@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { HashRouter, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";  // Ensure this import is correct
+import AppRoutes from "./routes"; // Ensure this import is correct
 import Headermain from "../header";
 import "./App.css";
 
@@ -23,11 +19,11 @@ export default function App() {
   const [isCursorVisible, setIsCursorVisible] = useState(true); // You can remove this if you're not using the cursor
 
   return (
-    <BrowserRouter basename="/adamssite">
+    <HashRouter>
       <ScrollToTop>
         <Headermain />
-        <AppRoutes />  {/* This is where your routes are rendered */}
+        <AppRoutes /> {/* This is where your routes are rendered */}
       </ScrollToTop>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

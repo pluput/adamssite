@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -9,6 +9,7 @@ import { Article2 } from "../pages/article2/article2";
 
 function AppRoutes() {
   return (
+    // <Router>
     <div className="s_c">
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function AppRoutes() {
         <Route path="*" element={<Home />} />
       </Routes>
     </div>
+    // </Router>
   );
 }
 
