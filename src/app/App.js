@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
+  BrowserRouter,
   BrowserRouter as Router,
   useLocation,
 } from "react-router-dom";
@@ -22,11 +23,11 @@ export default function App() {
   const [isCursorVisible, setIsCursorVisible] = useState(true); // You can remove this if you're not using the cursor
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop>
         <Headermain />
         <AppRoutes />  {/* This is where your routes are rendered */}
       </ScrollToTop>
-    </Router>
+    </BrowserRouter>
   );
 }
