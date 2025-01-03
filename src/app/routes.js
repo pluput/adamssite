@@ -18,7 +18,7 @@ function AppRoutes() {
         <Route path="/portfolio/article1" element={<Article1 />} />
         <Route path="/portfolio/article2" element={<Article2 />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
     </div>
     // </Router>
