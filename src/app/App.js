@@ -23,7 +23,7 @@ export default function App() {
   const [isCursorVisible, setIsCursorVisible] = useState(true); // You can remove this if you're not using the cursor
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/adamssite">
       <ScrollToTop>
         <Headermain />
         <AppRoutes />  {/* This is where your routes are rendered */}
